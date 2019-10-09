@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<html>
+</script>
+<title>Garden Gnomes Galore</title>
+<h1>Welcome to Garden Gnomes Galore!</h1>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="customerBackend.php" rel="stylesheet" media="screen">
+  <body>
+    <br>
+    <p1>
+      <img src="https://cdn.pixabay.com/photo/2016/04/18/13/52/dwarf-1336495__340.jpg" name="gardenGnomeA" height="300" width="300">
+      <img src="https://cdn.pixabay.com/photo/2015/01/11/12/07/elf-596155__340.jpg" name="gardenGnomeB" height="300" width="300">
+      <img src="https://cdn.pixabay.com/photo/2016/07/23/18/20/garden-gnome-1537294_960_720.jpg" name="gardenGnomeB" height="300" width="300">
+    </p1>
+
+    <form action="customerBackend.php" method="post" onsubmit="return validateForm();" id="form">
+
+      <h2>
+      <label>Username</label>
+      <input type="text" name ="userName"  value="userName">
+
+      <label>Password</label>
+      <input type="text" name="password" align="right" value="password">
+    </h2>
+      <br>
+      <label>Hippy Gnome ($7.95)</label>
+      <input type="number" id="hippyGnome" name="hippyGnome"><br>
+
+      <label>Wicked Gnome ($11.25)</label>
+      <input type="number" id="wickedGnome" name="wickedGnome"><br>
+
+      <label>Flower Gnome ($99999.99)</label>
+      <input type="number" id="flowerGnome" name="flowerGnome"><br>
+
+      <input type="radio" name="shipping" value="Seven Day">Seven Day (FREE)</input>
+      <input type="radio" name="shipping" value="Three Day">Three Day ($5.00)</input>
+      <input type="radio" name="shipping" value="Overnight">Overnight ($50.00)</input>
+
+      <button type="submit" id="submitButton">Submit</button>
+      <button type="reset" id="resetButton">Reset</button>
+    </form>
+
+  </body>
+<script type="text/javascript" src="formChecker.js"></script>
+</html>
